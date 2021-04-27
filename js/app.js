@@ -5,28 +5,34 @@ let data = {
   position: "Web Developer",
   socials: [
     {
+      id: "pf",
+      service: "Portfolio",
+      url: "https://carlamontano.tech",
+      icon: "fas fa-code",
+    },
+    {
+      id: "lk",
+      service: "LinkedIn",
+      url: "https://www.linkedin.com/in/carla-montano",
+      icon: "fab fa-linkedin",
+    },
+    {
+      id: "tw",
+      service: "Twitter",
+      url: "https://twitter.com/cmmh11",
+      icon: "fab fa-twitter",
+    },
+    {
       id: "fb",
       service: "Facebook",
-      url: "https://facebook.com/carlamontano",
+      url: "https://facebook.com/carlamontanoco",
       icon: "fab fa-facebook-f",
     },
     {
       id: "ig",
       service: "Instagram",
-      url: "https://instagram.com/carlamontano",
+      url: "https://www.instagram.com/carlamontanoco",
       icon: "fab fa-instagram",
-    },
-    {
-      id: "db",
-      service: "Dribbble",
-      url: "https://dribbble.com/carlamontano",
-      icon: "fab fa-dribbble",
-    },
-    {
-      id: "lk",
-      service: "LinkedIn",
-      url: "https://linkedin.com",
-      icon: "fab fa-linkedin",
     },
   ],
 };
@@ -77,7 +83,7 @@ let cardApp = (data) => {
 
     .card__wrapper {
     height: auto;
-    padding: 20px;
+    padding: 20px 20px 2rem;
     max-width: 300px;
     width: 100%;
     background: #fff;
@@ -90,8 +96,8 @@ let cardApp = (data) => {
 
     .card__user-img {
     border: 2px solid #2c5eff;
-    height: 70px;
-    width: 70px;
+    height: 100px;
+    width: 100px;
     margin: 2rem 0 1.5rem;
     border-radius: 50%;
     object-fit: cover;
@@ -112,7 +118,7 @@ let cardApp = (data) => {
     .card__title {
     display: block;
     font-size: 0.7rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
     text-align: center;
     }
 
@@ -125,7 +131,7 @@ let cardApp = (data) => {
     padding: 10px;
     border-radius: 3px;
     border: 1px solid #000;
-    margin-bottom: 1.4rem;
+    margin-bottom: 0.8rem;
     overflow: hidden;
     display: flex;
     /* justify-content: center; */
@@ -151,6 +157,16 @@ let cardApp = (data) => {
     text-decoration: none;
     }
 
+    .card__icon--pf {
+    color: #014cff;
+    border: 1px solid #014cff;
+    }
+
+    .card__icon--pf:hover {
+    background: #014cff;
+;
+    color: #fff;
+    }
     .card__icon--fb {
     color: #2c5eff;
     border: 1px solid #2c5eff;
@@ -161,21 +177,21 @@ let cardApp = (data) => {
     color: #fff;
     }
     .card__icon--ig {
-    color: #773fe7;
-    border: 1px solid #773fe7;
+    color: #8a3ab9;
+    border: 1px solid #8a3ab9;
     }
 
     .card__icon--ig:hover {
-    background: #773fe7;
+    background: #8a3ab9;
     color: #fff;
     }
-    .card__icon--db {
-    color: #f962b1;
-    border: 1px solid #f962b1;
+    .card__icon--tw {
+    color: #00acee;
+    border: 1px solid #00acee;
     }
 
-    .card__icon--db:hover {
-    background: #f962b1;
+    .card__icon--tw:hover {
+    background: #00acee;
     color: #fff;
     }
     .card__icon--lk {
@@ -196,7 +212,7 @@ let cardApp = (data) => {
   root.classList.add("root");
   // add css to an element
   root.style.cssText = `
-background: url('https://drupal8-prod.visitcalifornia.com/sites/drupal8-prod.visitcalifornia.com/files/styles/fluid_1200/public/2020-06/VC_Experiences_ReopeningBeaches_RF_1156532604_1280x640.jpg?itok=tPCjquVe'); background-size: cover; background-position: center;
+background: url('https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg?cs=srgb&dl=pexels-asad-photo-maldives-457882.jpg&fm=jpg'); background-size: cover; background-position: center;
 `;
   root.prepend(style);
   card.classList.add("card");
@@ -211,6 +227,7 @@ background: url('https://drupal8-prod.visitcalifornia.com/sites/drupal8-prod.vis
     
     tempNode.classList.add("card__icon", `card__icon--${item.id}`);
     tempNode.setAttribute("href", `${item.url}`);
+    tempNode.setAttribute("target", "_blank");
 
     tempNode.innerHTML = `
     <span class="card__icon-box">
