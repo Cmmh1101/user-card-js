@@ -2,6 +2,7 @@
 let data = {
   fullName: "Carla Montano",
   position: "Software Engineer",
+  work: "Green Mountain Technology",
   socials: [
     {
       id: "pf",
@@ -52,6 +53,7 @@ let cardApp = (data) => {
     <div class="card__info">
             <span class="card__name">${data.fullName}</span>
             <span class="card__title">${data.position}</span>
+            <span class="card__title">${data.work}</span>
     </div>
    <div class="card__socials">
         
@@ -166,22 +168,22 @@ let cardApp = (data) => {
 ;
     color: #fff;
     }
-    .card__icon--fb {
-    color: #2c5eff;
-    border: 1px solid #2c5eff;
+    .card__icon--bg {
+    color: #014cff;
+    border: 1px solid #014cff;
     }
 
-    .card__icon--fb:hover {
-    background: #2c5eff;
+    .card__icon--bg:hover {
+    background: #014cff;
     color: #fff;
     }
-    .card__icon--ig {
-    color: #8a3ab9;
-    border: 1px solid #8a3ab9;
+    .card__icon--gh {
+    color: #000000;
+    border: 1px solid #000000;
     }
 
     .card__icon--ig:hover {
-    background: #8a3ab9;
+    background: #000000;
     color: #fff;
     }
     .card__icon--tw {
