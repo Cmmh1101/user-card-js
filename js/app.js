@@ -113,12 +113,12 @@ let cardApp = (data) => {
     text-align: center;
     display: block;
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-bottom: 0.5rem;
     }
     .card__title {
     display: block;
-    font-size: 0.7rem;
+    font-size: 1.1rem;
     margin-bottom: 0.5rem;
     text-align: center;
     }
