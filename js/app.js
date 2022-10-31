@@ -17,7 +17,7 @@ let data = {
       icon: "fab fa-linkedin",
     },
     {
-      id: "gb",
+      id: "gh",
       service: "GitHub",
       url: "https://github.com/Cmmh1101",
       icon: "fab fa-github",
@@ -181,16 +181,15 @@ let cardApp = (data) => {
     color: #000000;
     border: 1px solid #000000;
     }
-
-    .card__icon--ig:hover {
+    .card__icon--gh:hover {
     background: #000000;
     color: #fff;
     }
+
     .card__icon--tw {
     color: #00acee;
     border: 1px solid #00acee;
     }
-
     .card__icon--tw:hover {
     background: #00acee;
     color: #fff;
