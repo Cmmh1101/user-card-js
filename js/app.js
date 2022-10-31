@@ -22,12 +22,12 @@ let data = {
       url: "https://github.com/Cmmh1101",
       icon: "fab fa-github",
     },
-    {
-      id: "bg",
-      service: "Blog",
-      url: "https://journey.carlamontano.tech",
-      icon: "fas fa-pencil-alt",
-    },
+    // {
+    //   id: "bg",
+    //   service: "Blog",
+    //   url: "https://journey.carlamontano.tech",
+    //   icon: "fas fa-pencil-alt",
+    // },
     {
       id: "tw",
       service: "Twitter",
