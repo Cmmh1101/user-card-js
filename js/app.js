@@ -1,8 +1,7 @@
 // let root = document.getElementsByClassName('root')[0]
-// data within an object
 let data = {
   fullName: "Carla Montano",
-  position: "Web Developer",
+  position: "Software Engineer",
   socials: [
     {
       id: "pf",
@@ -17,22 +16,22 @@ let data = {
       icon: "fab fa-linkedin",
     },
     {
+      id: "gb",
+      service: "GitHub",
+      url: "https://github.com/Cmmh1101",
+      icon: "fab fa-github",
+    },
+    {
+      id: "bg",
+      service: "Blog",
+      url: "https://journey.carlamontano.tech",
+      icon: "fas fa-pencil-alt",
+    },
+    {
       id: "tw",
       service: "Twitter",
       url: "https://twitter.com/cmmh11",
       icon: "fab fa-twitter",
-    },
-    {
-      id: "fb",
-      service: "Facebook",
-      url: "https://facebook.com/carlamontanoco",
-      icon: "fab fa-facebook-f",
-    },
-    {
-      id: "ig",
-      service: "Instagram",
-      url: "https://www.instagram.com/carlamontanoco",
-      icon: "fab fa-instagram",
     },
   ],
 };
@@ -48,7 +47,7 @@ let cardApp = (data) => {
   let card = document.createElement("section");
   let html = `
 <div class="card__wrapper">
-    <img src="/img/profile-pic.png" class="card__user-img" alt="" srcset="">
+    <img src="/img/profile-carla.png" class="card__user-img" alt="" srcset="">
 
     <div class="card__info">
             <span class="card__name">${data.fullName}</span>
@@ -224,7 +223,7 @@ background: url('https://images.pexels.com/photos/457882/pexels-photo-457882.jpe
 
   data.socials.forEach((item, index) => {
     let tempNode = document.createElement("a");
-    
+
     tempNode.classList.add("card__icon", `card__icon--${item.id}`);
     tempNode.setAttribute("href", `${item.url}`);
     tempNode.setAttribute("target", "_blank");
